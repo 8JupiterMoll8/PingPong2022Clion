@@ -273,11 +273,14 @@ void setup()
 
   FastLED.clear();
 
+
   // Init Comet
   lr_cometRaw.setStartPosition(359.0);
   lr_cometRaw.reverseDirection();
   rr_cometRaw.setStartPosition(0.0);
+
 }
+
 
 /*
 ██╗      ██████╗  ██████╗ ██████╗  ██╗██╗
@@ -302,9 +305,11 @@ leftRacket.loop();
 rightRacket.loop();
 leftTable.loop();
 rightTable.loop();
+
 ////////////////////////////////////////////////////////////
 // GAME_MANEGER_FOR_AUFSCHLAG_UND_BALLWECHSEL
 ballwechselCounter.loop();
+ballwechselCounter.printDebug();
 
 // Collison Detector 
 //collisionDetector.isCollision();
@@ -319,6 +324,8 @@ ballwechselCounter.loop();
 mydata.leftRacketHit    = leftRacket.isHit();
 mydata.leftRacketSpeed  = 1001;
 mydata.leftTableHit     = leftTable.isHit();
+
+
 
 mydata.rightRacketHit   = rightRacket.isHit();
 mydata.rightRacketSpeed = rightRacket.speed();
