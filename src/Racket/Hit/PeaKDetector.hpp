@@ -91,15 +91,16 @@ public:
 
 		// Ignore Aftershock state: wait for things to be quiet again.
 		default:
-		    
-			*ptr = false;
+
+            *ptr = false;
 
 			if (m_inputSensor > m_thresholdMin)
 			{
 				m_msec = 0; // keep resetting timer if above threshold
 			}
 			else if (m_msec > m_aftershockMillis)
-			{			    
+			{
+
 				m_state = 0; // go back to idle when
 			}
 		}

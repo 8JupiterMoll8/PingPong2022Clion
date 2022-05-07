@@ -146,12 +146,9 @@ void stateMachine()
          
          state= WAITING;
         }
-      // if
-
-       
-       
           updatePosition();
           randomFadeTail();
+          FastLED.show();
       
         break;
 

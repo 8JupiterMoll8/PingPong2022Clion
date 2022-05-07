@@ -25,7 +25,6 @@
 #include "Speed.hpp"
 #include "Racket.hpp"
 #include "Table.h"
-#include "BallwechselCounter.h"
 #include "MoveNeopixel.h"
 #include "Comet.h"
 #include "Bargraph.h"
@@ -34,6 +33,7 @@
 #include "ETSENDATA.h"
 #include "CollisionDetector.h"
 #include "InputHandler.h"
+//#include "Input.h"
 
 
 #include "BallWechselState.h" //! THIS HAS TO BE BEFORE THE STATEMACHINE
@@ -42,6 +42,6 @@
 #include "StartState.h"
 #include "A_Left_Table_LinksAufschlagState.h"
 #include "B_Right_Table_LinksAufschalgState.h"
-#include "BallwechselCounter.h"
+#include "BallWechselCounter.h"
 
 #endif

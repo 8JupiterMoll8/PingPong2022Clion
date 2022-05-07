@@ -14,8 +14,8 @@ public:
 
     auto loop()        {        _piezo.loop();        }
     auto resetHitSum() {        _piezo.resetHitSum(); }
-    auto hitPeak() const { return _piezo.hitPeak();     }
-    auto isHit() const { return _piezo.isHit();       }
-	auto hitSum()      { return _piezo.hitSum();      }
+    auto hitPeak()    { return _piezo.hitPeak();     }
+    auto isHit()  { return _piezo.isHit();       }
+	auto hitSum()     { return _piezo.hitSum();      }
 };
 #endif
